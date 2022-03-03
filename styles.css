@@ -4,6 +4,7 @@
 
 html {
   font-family: poppins, sans-serif;
+  scroll-behavior: smooth;
   height: 2000px;
 }
 
@@ -13,9 +14,18 @@ body {
 
 /* Elements Css */
 
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 82px;
+}
+
 a {
   text-decoration: inherit;
   color: initial;
+  font-weight: bold;
   position: relative;
   padding: 0 10px;
 }
@@ -44,6 +54,7 @@ a:hover:after {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99999;
 }
 
 .xiaomi-header {
@@ -56,14 +67,41 @@ a:hover:after {
 .xiaomi-header__name {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .logo {
-  width: 200px;
+  width: 85px;
   height: auto;
 }
 
 .xiaomi-header__navigation {
   display: flex;
   gap: 42px;
+}
+
+/* Main Section CSS */
+
+.phone-section__header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone-section__img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* spec section  */
+
+.spec-container {
+  width: 100%;
+  display: grid;
+  grid-template: "item1 item2" "item1 item2";
+}
+.spec-container__item {
+  border: 1px solid black;
 }
