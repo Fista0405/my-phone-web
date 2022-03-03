@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap");
+
+/* Base css */
+
+html {
+  font-family: poppins, sans-serif;
+  height: 2000px;
+}
+
+body {
+  margin: 0px;
+}
+
+/* Elements Css */
+
+a {
+  text-decoration: inherit;
+  color: initial;
+  position: relative;
+  padding: 0 10px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  background-color: #ff6a04;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ff6a04;
+}
+a:hover:after {
+  color: #ff6a04;
+  width: 100%;
+}
+
+/* Header part */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.xiaomi-header {
+  background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.xiaomi-header__name {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.xiaomi-header__navigation {
+  display: flex;
+  gap: 42px;
+}
